@@ -5,6 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <script>
+        function somar (){
+            let n1 = parseInt(document.body.children[1].children[0].value)
+            let n2 = parseInt(document.body.children[2].children[0].value)
+            let s = n1 + n2
+            window.alert(s)
+        }
+        function subtrair (){
+            let n1 = parseInt(document.body.children[1].children[0].value)
+            let n2 = parseInt(document.body.children[2].children[0].value)
+            let m = n1 - n2
+            window.alert(m)
+        }
+        function multiplicar (){
+            let n1 = parseInt(document.body.children[1].children[0].value)
+            let n2 = parseInt(document.body.children[2].children[0].value)
+            let v = n1 * n2
+            window.alert(v)
+        }
+        function dividir (){
+            let n1 = parseInt(document.body.children[1].children[0].value)
+            let n2 = parseInt(document.body.children[2].children[0].value)
+            let d = n1 / n2
+            window.alert(d)
+        }
+    </script>
     
 </head>
 
@@ -14,9 +40,9 @@
     <div> <input id="campo2" placeholder="Número 2" type="number"></div>
     <div>
         <button onclick="somar()">+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
     </div>
     <div id="resultado"> </div>
 </body>

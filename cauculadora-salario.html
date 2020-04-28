@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+    <title>Calculadora Salário</title>
     <script>
         function desconto (){
             let n1 = parseInt(document.body.children[1].children[0].value)
@@ -18,13 +20,13 @@
 </head>
 
 <body>
-    <h1> Calculadora </h1>
-    <div> <input id="campo1" placeholder="Salário" type="number"></div>
-    <div> <input id="campo2" placeholder="% de descontos" type="number"></div>
-    <div>
-        <button onclick="desconto()">Ver salário líquido</button>
-    </div>
-    <div id="resultado"> </div>
+    <div class="wrapper">
+        <h1>Calculadora<span>Salário</span></h1>
+        <div><input id="campo1" placeholder="Salário" type="number"></div>
+        <div><input id="campo2" placeholder="% de descontos" type="number"></div>
+        <div><button onclick="desconto()">Ver salário líquido</button></div>
+        <div id="resultado"> </div>
+    </div>   
 </body>
 
 </html>

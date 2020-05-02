@@ -1,0 +1,23 @@
+{
+  "name": "t30-exercicio-calculdora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabricadeprogramador/t30-exercico-calculadora.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabricadeprogramador/t30-exercico-calculadora/issues"
+  },
+  "homepage": "https://github.com/fabricadeprogramador/t30-exercico-calculadora#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

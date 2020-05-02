@@ -9,8 +9,8 @@
     <title>Calculadora Salário</title>
     <script>
         function desconto (){
-            let n1 = parseInt(document.body.children[1].children[0].value)
-            let n2 = parseInt(document.body.children[2].children[0].value)
+            let n1 = parseInt(campo1.value)
+            let n2 = parseInt(campo2.value)
             let d = (n1/100) * n2
             resultado.innerText = n1 - d
         }
@@ -22,11 +22,11 @@
 <body>
     <div class="wrapper">
         <h1>Calculadora<span>Salário</span></h1>
-        <div><input id="campo1" placeholder="Salário" type="number"></div>
-        <div><input id="campo2" placeholder="% de descontos" type="number"></div>
-        <div><button onclick="desconto()">Ver salário líquido</button></div>
-        <div id="resultado"> </div>
-    </div>   
+        <div class="break"><input id="campo1" placeholder="Salário" type="number"></div>
+        <div class="break"><input id="campo2" placeholder="% de descontos" type="number"></div>
+        <div class="break"><button onclick="desconto()">Ver salário líquido</button></div>
+        <div class="break" id="resultado"> </div>
+    </div>
 </body>
 
 </html>

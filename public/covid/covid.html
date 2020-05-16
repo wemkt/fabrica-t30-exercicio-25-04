@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+    <title>Calculadora Salário</title>
+    <script>
+        function desconto (){
+            let n1 = parseInt(campo1.value)
+            let n2 = parseInt(campo2.value)
+            let d = (n1/100) * n2
+            resultado.innerText = n1 - d
+        }
+        
+    </script>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Calculadora<span>Salário</span></h1>
+        <div class="break"><input id="campo1" placeholder="Salário" type="number"></div>
+        <div class="break"><input id="campo2" placeholder="% de descontos" type="number"></div>
+        <div class="break"><button onclick="desconto()">Ver salário líquido</button></div>
+        <div class="break" id="resultado"> </div>
+    </div>
+</body>
+
+</html>

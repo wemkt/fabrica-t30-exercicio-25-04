@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Maior</title>
+    <script>
+        function caucular() {
+            let num_um = parseFloat(numero_um.value)
+            let num_dois = parseFloat(numero_dois.value)
+
+        if (num_um > num_dois) {
+                resuldado.innerText = numero_um
+            } else if {
+                resuldado.innerText = "Número 2 é maior"
+            } else resuldado.innerText = "Os números são iguais"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>Calculadora Maior</h1>
+        </div>
+        <div>
+            <div> <input type="number" id="numero_um" placeholder="Número 1"></div>
+            <div> <input type="number" id="numero_dois" placeholder="Número 2"></div>
+            <div> <button onclick="calcular()">Calcular</button></div>
+            <div> <label> Resultado:</label>
+            <label id="resuldado"> </label>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

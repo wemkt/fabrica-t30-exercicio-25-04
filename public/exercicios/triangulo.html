@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulo</title>
+    <script>
+        function verificaTriangulo() {
+	        let ladoa = Number(document.getElementById('ladoa').value);
+	        let ladob = Number(document.getElementById('ladob').value);
+	        let ladoc = Number(document.getElementById('ladoc').value);
+
+            if(((ladoa + ladob) == ladoc) || ((ladob + ladoc) == ladoa) || ((ladoa + ladoc) == ladob)){
+            resuldado.innerText = 'não é triângulo'
+            }else if (ladoa != ladob && ladob != ladoc && ladoa != ladoc) {
+            resuldado.innerText = 'escaleno'
+            }else if(ladoa == ladob && ladob != ladoc || ladob == ladoc && ladoc != ladoa || ladoa == ladoc && ladoc != ladob) {
+            resuldado.innerText = 'isoceles'
+            }else if(ladoa == ladob && ladob == ladoc){
+            resuldado.innerText = 'equilatero'
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Triângulo</h1>
+        <div><input id="ladoa" placeholder="Lado A" type="number"></div>
+        <div><input id="ladob" placeholder="Lado B" type="number"></div>
+        <div><input id="ladoc" placeholder="Lado C" type="number"></div>
+        <div><button onclick="verificaTriangulo()">Verificar Triângulo</button></div>
+        <div><label id="resuldado"> </label></div>
+    </div>
+</body>
+</html>

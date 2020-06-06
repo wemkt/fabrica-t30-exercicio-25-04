@@ -10,14 +10,14 @@
 	        let ladob = Number(document.getElementById('ladob').value);
 	        let ladoc = Number(document.getElementById('ladoc').value);
 
-            if(((ladoa + ladob) == ladoc) || ((ladob + ladoc) == ladoa) || ((ladoa + ladoc) == ladob)){
-            resuldado.innerText = 'não é triângulo'
-            }else if (ladoa != ladob && ladob != ladoc && ladoa != ladoc) {
-            resuldado.innerText = 'escaleno'
-            }else if(ladoa == ladob && ladob != ladoc || ladob == ladoc && ladoc != ladoa || ladoa == ladoc && ladoc != ladob) {
-            resuldado.innerText = 'isoceles'
+            if(((ladoa + ladob) <= ladoc) || ((ladob + ladoc) <= ladoa) || ((ladoa + ladoc) <= ladob)){
+                resuldado.innerText = 'não é triângulo'
+            }else if (ladoa != ladob && ladob != ladoc && ladoa != ladoc){
+                resuldado.innerText = 'escaleno'
+            }else if(ladoa == ladob && ladob != ladoc || ladob == ladoc && ladoc != ladoa || ladoa == ladoc && ladoc != ladob){
+                resuldado.innerText = 'isoceles'
             }else if(ladoa == ladob && ladob == ladoc){
-            resuldado.innerText = 'equilatero'
+                resuldado.innerText = 'equilatero'
             }
         }
     </script>

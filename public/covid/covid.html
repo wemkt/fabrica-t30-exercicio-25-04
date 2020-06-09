@@ -8,26 +8,87 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
     <title>Calculadora Salário</title>
-    <script>
-        function desconto (){
-            let n1 = parseInt(campo1.value)
-            let n2 = parseInt(campo2.value)
-            let d = (n1/100) * n2
-            resultado.innerText = n1 - d
-        }
-        
-    </script>
+    <script src="hospital.js"></script>
     
 </head>
 
 <body>
-    <div class="wrapper">
-        <h1>Calculadora<span>Salário</span></h1>
-        <div class="break"><input id="campo1" placeholder="Salário" type="number"></div>
-        <div class="break"><input id="campo2" placeholder="% de descontos" type="number"></div>
-        <div class="break"><button onclick="desconto()">Ver salário líquido</button></div>
-        <div class="break" id="resultado"> </div>
-    </div>
+    <div class="container">
+        <header>
+            <div class="col-md-12 text-center">
+                <h1>Covid-19</h1>
+                <P>Controle de Leitos hospital</P>
+            </div>
+        </header>
+        <div class="col-md-12 text-center">
+            <h2>Hospital</h2>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6 text-center">
+                <label>Normal</label>
+                <input type="text">
+            </div>
+            <div class="col-md-6 text-center">
+                <label>Campanha</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="col-md-12 text-center">
+                <h2>Paciente</h2>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-3 themed-grid-col">
+                <label>Nome</label>
+                <input type="text">
+            </div>
+            <div class="col-md-3 themed-grid-col">
+                <label>Sexo</label>
+                M<input type="radio">
+                F<input type="radio">
+            </div>
+            <div class="col-md-3 themed-grid-col">
+            <input type="button" value="Cadastrar">
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6 text-center">
+                <table>
+                    <h3>Hospital Normal</h3>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Sexo</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>F</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-6 text-center">
+                <table>
+                    <h3>Hospital Normal</h3>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Sexo</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>F</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+ 
+        
+    </div>    
 </body>
 
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classificador de Pessoas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64da04e138.js" crossorigin="anonymous"></script>
+    <style>
+      body{font-family: 'Poppins', sans-serif;}
+    </style>
+    <script>
+      class Pessoa {
+        //Definindo construtor e suas propriedades
+        constructor(nome, idade, sexo) {
+          this.nome = nome;
+          this.idade = idade;
+          this.sexo = sexo;
+        }
+        adicionarPessoa() {
+          //Condicoes Lógica do Triangulo
+          let homemadulto =
+            this.idade > 17
+            this.genero = masc;
+
+          let mulheradulto =
+            this.idade > 17
+            this.genero = fem;
+
+          let adolescente =
+            this.idade >= 14 &&
+            this.idade < 18;
+          
+          let crianca =
+            this.idade < 14;
+
+            console.log(
+            `Honem:${homemadulto}  Mulher:${mulheradulto} Adolescente:${adolescente} Criança:${crianca}`
+          );
+        
+        
+
+          //Lógica do return
+          if(homemadulto){
+                resuldado.innerText = 1}
+
+          }
+        }
+        function aoClicarBtnAdicionar() {
+        //Leitura
+        let nome = parseFloat(document.getElementById("nm").value);
+        let idade = parseFloat(document.getElementById("id").value);
+        let genero = parseFloat(document.getElementById("ge").value);
+
+        //Lógica
+        let addpessoa = new Pessoa(nome, idade, genero);
+        let tipo = tipagem.adicionarPessoa();
+
+        //Resultado
+        let resultado = document.getElementById("resultado");
+        
+        
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://image.flaticon.com/icons/svg/554/554724.svg" alt="" width="80" height="80">
+        <h2>Identificador de Pessoas</h2>
+        <p class="lead">Exercício prático para o curso Fábrica de Programador</p>
+      </div>
+      <div class="row">
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Preencha o Formulário</h4>
+          <hr class="mb-4"> 
+          <form>
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <label for="firstName">Nome</label>
+                <input type="text" class="form-control" id="nm" type="text" placeholder="" required="">
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="lastName">Idade</label>
+                <input type="number" class="form-control" id="id" placeholder="" required="">
+              </div>
+              <div class="col-md-5 mb-5">
+                <label for="firstName">Gênero</label></br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ge" value="masc" checked="">
+                  <label class="form-check-label" for="inlineRadio1">Masc</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ge" value="fem" checked="">
+                  <label class="form-check-label" for="inlineRadio2">Fem</label>
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="aoClicarBtnAdicionar()">Adicionar</button>
+          </form>
+        </div>
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Contagem</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Homens</h6>
+              </div>
+              <span class="badge badge-secondary badge-pill" id="resultado"> </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Mulheres</h6>
+              </div>
+              <span class="badge badge-secondary badge-pill" id="resultado"> </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Adolescentes</h6>
+              </div>
+              <span class="badge badge-secondary badge-pill" id="resultado"> </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Crianças</h6>
+              </div>
+              <span class="badge badge-secondary badge-pill" id="resultado"> </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Total</h6>
+              </div>
+              <span class="badge badge-secondary badge-pill" id="resultado"> </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
